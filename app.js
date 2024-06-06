@@ -31,11 +31,11 @@ app.use("/",(req, res) => {
     return res.status(400).json({ message: "Both userMessage and response fields are required" });
 })
 // Define URL handler
-app.use("/", conatactUsRouters);
-app.use("/",applicationFormRouters);
-app.use("/",classesRouters)
-app.use("/",subscribeRouters)
-app.use("/",chatBotRouter)
+// app.use("/", conatactUsRouters);
+// app.use("/",applicationFormRouters);
+// app.use("/",classesRouters)
+// app.use("/",subscribeRouters)
+// app.use("/",chatBotRouter)
 // Start the server
 const PORT = 3006;
 app.listen(PORT, () => {
