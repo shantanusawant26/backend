@@ -27,7 +27,9 @@ app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Credentials', true);
     next();
 });
-
+app.use("/",(req, res) => {
+    return res.status(400).json({ message: "Both userMessage and response fields are required" });
+})
 // Define URL handler
 app.use("/", conatactUsRouters);
 app.use("/",applicationFormRouters);
