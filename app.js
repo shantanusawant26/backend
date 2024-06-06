@@ -1,13 +1,13 @@
-const dbconnection= require("./db")
+// const dbconnection= require("./db")
 const cors = require('cors');
 const express = require("express");
 const app = express();
-const conatactUsRouters = require("./contactUsRouters");
-const applicationFormRouters = require("./applicationFormRouters");
-const classesRouters = require('./classRouters')
-const bodyParser = require("body-parser");
-const subscribeRouters = require("./subscribeRouters")
-const chatBotRouter = require('./chatBotRouters')
+// const conatactUsRouters = require("./contactUsRouters");
+// const applicationFormRouters = require("./applicationFormRouters");
+// const classesRouters = require('./classRouters')
+// const bodyParser = require("body-parser");
+// const subscribeRouters = require("./subscribeRouters")
+// const chatBotRouter = require('./chatBotRouters')
 
 // Define middleware
 app.use(express.json());
