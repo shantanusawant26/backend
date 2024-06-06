@@ -28,7 +28,7 @@ app.use(function(req, res, next) {
     next();
 });
 app.use("/",(req, res) => {
-    return res.status(400).json({ message: "Both userMessage and response fields are required" });
+    res.json("Both userMessage and response fields are required" );
 })
 // Define URL handler
 // app.use("/", conatactUsRouters);
